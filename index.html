@@ -140,6 +140,14 @@
             border-radius: 20px; text-align: center; width: 80%; max-width: 300px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.7);
         }
+
+        /* Ad Container Styling */
+        .ad-container {
+            width: 100%;
+            margin: 10px 0;
+            text-align: center;
+            min-height: 50px;
+        }
     </style>
 </head>
 <body>
@@ -170,10 +178,23 @@
         <div class="menu" id="menuScreen">
             <h1 class="game-title">Fruit Remember</h1>
             
-            <div style="display: flex; flex-direction: column; gap: 12px; width: 80%; margin-top: 20px;">
+            <div style="display: flex; flex-direction: column; gap: 12px; width: 80%; margin-top: 10px;">
                 <button onclick="startGame('easy')">Easy (4x4)</button>
                 <button onclick="startGame('medium')">Medium (6x6)</button>
                 <button onclick="startGame('hard')">Hard (8x8)</button>
+            </div>
+
+            <!-- Ad Block: Menu Screen Banner -->
+            <div class="ad-container">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-3711405849292009"
+                     data-ad-slot="auto"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
         </div>
 
@@ -217,12 +238,26 @@
             </div>
 
             <div id="winMessage"></div>
+
+            <!-- Ad Block: Bottom Game Banner -->
+            <div class="ad-container">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-3711405849292009"
+                     data-ad-slot="auto"
+                     data-ad-format="horizontal"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
         </div>
 
     </div>
 
     <script>
-        const fruits = ['🍎', '🍌', '🍇', '🍉', '🍓', '🍒', '🍍', '🥝', '🍑', '🥭', '🍋', '🍊', '🍐', '🍏', '🍈', '🥥', '🍅', '🥑', '🍆', '🥔', '🥕', '🌽', '🌶️', '🥒', '🥬', '🥦', '🧄', '🧅', '🍄', '🥜', '🌰', '🍞'];
+        const fruits = ['🍎', '🍌', '🍇', '🍉', '🍓', '🍒', '🍍', '🥝', '🍑', '🥭', '🍋', '🍊', '🍐', '🍏', '🍈', '🥥', '🍅', '🥑', '🍆', '🥔', '🥕', '🌽', '🌶️', '🥒', '🥬', '🥦', '🧄', '🧅', '🍄', '🥜', '```javascript
+'🌰', '🍞'];
         
         let currentMode = 'easy';
         let boardSize = 4;
